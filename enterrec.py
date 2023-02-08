@@ -24,7 +24,7 @@ def enrec():
                 f.close()
                 db = pd.read_csv(fn, index_col=False)
                 # st.table(db)
-                amlist = db['amount']
+                amlist = db['Amount']
                 # st.table(amlist)
                 amlist = list(map(float, amlist))
                 totam = sum(amlist)
