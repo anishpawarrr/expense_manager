@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config("EXPMANA")
+# st.set_page_config("EXPMANA")
 import streamlit_option_menu as om
 import pandas as pd
 import home
