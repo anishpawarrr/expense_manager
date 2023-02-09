@@ -75,7 +75,7 @@ def dt():
     fn = getfile()
     fn += '.csv'
     df = pd.read_csv(fn)
-    st.table(df)
+    st.write(df)
 
     for i in range(1,13,1):
         f = f"{i}.csv"
