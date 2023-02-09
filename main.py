@@ -97,5 +97,5 @@ if opt == 'Home':
     hom()
 elif opt == 'Record':
     enrec()
-else:
+elif opt == 'History':
     dt()
