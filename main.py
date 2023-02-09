@@ -92,10 +92,10 @@ def dt():
 
 
 pm = 3000
-opt = om.option_menu("Expense Manager", ['.', '.', '.'], key="main menu", icons=['bi bi-house', 'bi bi-box-arrow-in-left', 'bi bi-clock-history'], orientation='horizontal', default_index=0)
+opt = om.option_menu("Expense Manager", ['Home', 'Record', 'History'], key="main menu", icons=['bi bi-house', 'bi bi-box-arrow-in-left', 'bi bi-clock-history'], orientation='horizontal', default_index=0)
 if opt == 'Home':
     hom()
-elif opt == 'Enter record':
+elif opt == 'Record':
     enrec()
 else:
     dt()
