@@ -82,7 +82,7 @@ def dt():
         csv = pd.read_csv(f)
         csv = convert_df(csv)
         st.download_button(
-            f"Press to Download {i}/23 expenses",
+            f"Download {i}/23 expenses",
             csv,
             "file.csv",
             "text/csv",
