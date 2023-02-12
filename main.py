@@ -14,6 +14,9 @@ def showpiechart(fig):
 def hom():
     st.subheader("This month's Overview")
     cf = open('curr.csv', 'r')
+    dataframe = pd.read_csv(f"{getfile()}.csv")
+    st.line_chart(data=dataframe, x = "Date", y="Amount")
+
     pc = cf.readlines()
     ind = pc[0].split(',')
     si = ind[0]
