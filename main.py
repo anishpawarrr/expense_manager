@@ -16,7 +16,7 @@ def hom():
     cf = open('curr.csv', 'r')
     dataframe = pd.read_csv(f"{getfile()}.csv")
     st.line_chart(data=dataframe, x = "Date", y="Amount")
-    st.write("Expenses over time")
+    st.write("Expenses over time-")
     pc = cf.readlines()
     ind = pc[0].split(',')
     si = ind[0]
