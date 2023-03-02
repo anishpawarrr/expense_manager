@@ -9,6 +9,7 @@ def piechart(dicti):
     fig = go.Figure(data=[go.Pie(labels=list(dicti.keys()), values=list(dicti.values()))])
     return fig
 def showpiechart(fig):
+    #pichart
     st.plotly_chart(fig)
 
 def hom():
