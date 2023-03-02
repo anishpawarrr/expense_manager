@@ -47,7 +47,7 @@ def enrec():
                 fn = getfile()
                 fn += ".csv"
                 f = open(fn, 'a+')
-                s = f"{rdate},{amount},{reason}\n"
+                s = f"\n{rdate},{amount},{reason}"
                 f.write(s)
                 f.close()
                 db = pd.read_csv(fn, index_col=False)
